@@ -18,7 +18,7 @@ function triggerSearch() {
 
 function fetchWeather(city) {
   const apiKey = "5a2b2ed556576f80d95dd21ab43ba084";
-  const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}&units=metric`;
 
   fetch(url)
     .then((response) => response.json())
